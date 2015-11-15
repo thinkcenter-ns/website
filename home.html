@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="home.css">
+		<meta charset="utf-8">
+		<title>ITWS Assignment-2 (Home)</title>
+		<script type="text/javascript">
+			var slideimages = new Array() // create new array to preload images
+			slideimages[0] = new Image() // create new instance of image object
+			slideimages[0].src = "nov10.jpg.jpg" // set image src property to image path, preloading image in the process
+			slideimages[1] = new Image()
+			slideimages[1].src = "nov11.jpg.jpg"
+			slideimages[2] = new Image()
+			slideimages[2].src = "nov12.jpg.jpg"
+		</script>
+
+		<script>
+			function noveen(){
+				document.getElementById("noveen").innerHTML = "I Rock!  Do You?";
+			}
+		</script>
+		
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};
+				return i;
+			}
+		</script>
+		<script>
+			fun();
+		</script>
+	</head>
+	
+	<body onload="startTime()">
+		<div id="banner">
+			<div class="w">
+				Welcome to Noveen's website:<br><br>
+				<div id="nav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="hobbies.html">My Hobbies<span class="right-arrow">&#9658;</span></a>
+							<ul>
+								<li><a href="acheive.html">My Acheivements</a></li>            
+								<li><a href="aim.html">My Aim</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="feedback.html">Feedback Form</a></li>
+					</ul>
+					<br class="clearboth"/>
+				</div>
+			</div>
+		</div>
+		<div id="oo">	
+			<div>
+				<a href="feedback.html" id="feed">Feedback Form</a>
+				<div id="google">
+					<form name="cse" id="searchbox_demo" action="https://www.google.com/cse">
+						<input type="hidden" name="cref" value="" />
+						<input type="hidden" name="ie" value="utf-8" />
+						<input type="hidden" name="hl" value="" />
+						<input name="q" type="text" size="40" />
+						<input type="submit" name="sa" value="Google!" />
+					</form>
+					<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo"></script>
+				</div>
+			</div>
+			<br>
+			<hr class="class">
+			<div id="current">
+				<p>You're currently at: <a href="home.html">Home</a> </p>
+				<p id="sc"></p>
+				<script>
+					function fun() {
+						var person = prompt("Please enter your name", "Anonymous");
+						if (person != null) {
+							document.getElementById("sc").innerHTML =
+							"Hello " + person + "! How are you today?";
+						}
+					}
+				</script>
+			</div>
+			<hr class="class">
+			<div>
+				<div>
+					<img id="image" src="nov10.jpg" alt="Nature">
+					<script type="text/javascript">
+						
+						var step=0
+						function slideit(){
+						
+						if (!document.images)
+							return
+						document.getElementById('image').src = slideimages[step].src
+						if (step<2)
+							step++
+						else
+							step=0
+						
+						setTimeout("slideit()",2000)
+						}
+						slideit()
+					</script>
+				</div>
+			</div>
+			These  are some random Nature Pictures!&nbsp;&nbsp;
+			Done by me!
+			<p></p>
+			<p></p>
+			<table>
+				<tr>
+					<td id="links">
+						
+						<ul>
+							<li class="list"> 
+								<a href="main.html">Home</a>
+							</li>
+							
+							<li class="list"> 
+								<a href="hobbies.html">My Hobbies</a>
+								<ul>
+									<li>
+										<a href="acheive.html">My Acheivments</a>
+									</li>
+									<li>
+										<a href="aim.html">My Aim</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="list"> 
+								<a href="about.html">About Me</a>
+							</li>
+							
+							<li class="list">
+								<a href="contact.html">Contact Us</a>
+							</li>
+							
+							<li class="list">
+								<a href="feedback.html">Feedback Form</a>
+							</li>
+						</ul>
+					</td>
+					
+					<td id="line">
+						<p id="p">Hey there user! Welcome to my website.<br>
+						Let me wish you a warm welcome to my official personal website.<br><br>
+						This website basically talks about basic things such as school and college.<br>
+						Also, there is a dedicated page related to my acheivements wherein I have talked about my acheivements in life.<br>
+						I have also given special position to a feedback page.</p>
+					</td>
+				</tr>
+			</table>
+			<hr class="class">
+			<div>
+				<p id="dev"><strong><em>Developed By:</em></strong></p>
+				<p>Noveen Sachdeva</p>
+				<p><u>Roll No</u> : 201502089</p>
+				<p>IIIT Hyderabad</p>
+			</div>
+			<div id="date">
+				<p id="col"><strong><em>The current time is:</em></strong></p>
+				<div id="txt"></div>
+			</div>
+			<p id="last">&copy;Noveen Sachdeva</p>
+		</div>
+	</body>	
+</html>

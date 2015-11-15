@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="about.css">
+		<title>My Hobbies</title>
+		<meta charset="utf-8">
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
+	</head>
+	
+	<body onload="startTime()">
+		
+		<div id="banner">
+			<div class="w">
+				Welcome to Noveen's website:<br><br>
+				<div id="nav">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="hobbies.html">My Hobbies<span class="right-arrow">&#9658;</span></a>
+					<ul>
+						<li><a href="acheive.html">My Acheivements</a></li>            
+						<li><a href="aim.html">My Aim</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="feedback.html">Feedback Form</a></li>
+			</ul>
+			<br class="clearboth"/>
+		</div>
+			</div>
+		</div>
+		
+		<div id="oo">
+			<div>
+				<a href="feedback.html" id="feed">Feedback Form</a>
+				<div id="google">
+					<form name="cse" id="searchbox_demo" action="https://www.google.com/cse">
+						<input type="hidden" name="cref" value="" />
+						<input type="hidden" name="ie" value="utf-8" />
+						<input type="hidden" name="hl" value="" />
+						<input name="q" type="text" size="40" />
+						<input type="submit" name="sa" value="Google!" />
+					</form>
+					<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo"></script>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div id="current">
+				<p>You're currently at: <a href="home.html">Home</a>&nbsp;-->&nbsp;<a href="hobbies.html">My Hobbies</a></p>
+			</div>
+			<hr>
+			<p></p>
+			<p></p>
+			<table>
+				<tr>
+					<td id="links">
+						
+						<ul>
+							<li class="list"> 
+								<a href="main.html">Home</a>
+							</li>
+							
+							<li class="list"> 
+								<a href="hobbies.html">My Hobbies</a>
+								<ul>
+									<li>
+										<a href="acheive.html">My Acheivments</a>
+									</li>
+									<li>
+										<a href="aim.html">My Aim</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="list"> 
+								<a href="about.html">About Me</a>
+							</li>
+							
+							<li class="list">
+								<a href="contact.html">Contact Us</a>
+							</li>
+							
+							<li class="list">
+								<a href="feedback.html">Feedback Form</a>
+							</li>
+						</ul>
+					</td>
+					
+					<td id="line">
+						<div id="p">
+							Hey everyone!<br>
+							Thanks for showing interest in my website, I owe you deep grattitude.<br>
+							As for my hobbies, my hobbies are as follows:
+							<br><br><br>
+							<strong>
+								Playing Any Physical Game
+							</strong><br><br>
+							<div class="out">
+								<img src="nov21.jpg" alt class="pe">
+								I love playing physical games because it has so many benefits like it keeps us fit, 
+								good for recreation.<br>
+								I love all sorts of games like playing cricket, football, squash, gym etc.<br><br>
+							</div><br>
+							<strong>
+								Video Games
+							</strong><br><br>
+							<div class="out">
+								<div id="pointer-event">
+									<span id="checkbox">
+										<input type="checkbox">
+										<img id="checked" src="two.png" alt>
+										<img id="unchecked" src="one.png" alt>
+									</span>
+								</div>
+								<span id="red">(Click over the image)</span><br>
+								Video games are the new standard for recreation not only among students
+								but everyone nowadays.<br>
+								I majorly like games of type shooting and football.<br><br>
+							</div><br>
+							<strong>
+								Watching Movies
+							</strong><br><br>
+							<div class="out">
+								<img src="mov.jpg" alt class="pe1">
+								Watching movies has been a major part of our lives since long time.<br>
+								Movies are for everyone irrespective of the age.<br>
+								I like movies of the type horror, thriller, and Sci-Fi.<br><br>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<hr>
+			<div>
+				<p class="col"><strong><em>Developed By:</em></strong></p>
+				<p>Noveen Sachdeva</p>
+				<p><u>Roll No</u> : 201502089</p>
+				<p>IIIT Hyderabad</p>
+			</div>
+			<div id="date">
+				<p class="col"><strong><em>The current time is:</em></strong></p>
+				<div id="txt"></div>
+			</div>
+			<p id="last">&copy;Noveen Sachdeva</p>
+		</div>
+	</body>
+</html>

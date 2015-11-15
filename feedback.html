@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	
+	
+	<head>
+		<link rel="stylesheet" href="feedback.css">
+		<title>
+			Feedback Form
+		</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<div id="banner">
+			<div class="w">
+				Welcome to Noveen's website:<br><br>
+				<div id="nav">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="hobbies.html">My Hobbies<span class="right-arrow">&#9658;</span></a>
+					<ul>
+						<li><a href="acheive.html">My Acheivements</a></li>            
+						<li><a href="aim.html">My Aim</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="feedback.html">Feedback Form</a></li>
+			</ul>
+			<br class="clearboth"/>
+		</div>
+			</div>
+		</div>
+		
+		<div id="oo">
+			<br>
+			<form action="home.html" id="home">
+				<input type="submit" value="Back to Home" class="submit">
+			</form>
+
+			<div id="h">FEEDBACK FORM</div>
+			<br><hr><br>
+			<form action="home.html">
+				Name:<br> <input type="text" class="ty" placeholder="Noveen Sachdeva">
+				<br><br>
+				E-Mail:<br> <input type="text" class="ty" placeholder="username@provider.com">
+				<br><br>
+				How much do you rate us on 5 ?
+				<br>
+				5<input type="radio">&nbsp;&nbsp;4<input type="radio">&nbsp;&nbsp;3<input type="radio">&nbsp;&nbsp;2<input type="radio">&nbsp;&nbsp;1<input type="radio">
+				<br><br>
+				Please enter your feedback:<br><br>
+				<textarea class="longInput" cols="100" rows="20" placeholder="Your feedback goes here..."></textarea>
+				<br><br>
+				<input type="submit" value="Submit!" onclick="alert('Your feedback has been recorded!!')" class="submit">
+			</form>
+			<p id="last">&copy;Noveen Sachdeva</p>
+		</div>
+	</body>
+</html>

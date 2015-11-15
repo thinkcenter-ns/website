@@ -1,0 +1,196 @@
+body{
+	font-size: 24px;
+	<--background-image: url("nov20.jpg");
+	background-color: #a1cb2f;
+	width: 80%;
+	margin-left: 10%;
+	border-style: solid;
+	<--padding: 50px;
+	
+	
+	height: 100%;
+	position: relative;
+	margin-top: 90px;
+	margin-bottom: -35px;
+}
+
+#h{
+	text-align:center;
+	border-style: solid;
+	border-radius: 7px;
+	width: 300px;
+	margin-left: 37%;
+	background-color: linen;
+}
+
+#home{
+	float: left;
+}
+
+#sub{
+	display: inline;
+	text-align: center;
+	height: 50px;
+	width: 800px;
+	margin-left: 0px;
+}
+
+.ty{
+	width: 200px;
+	height:25px;
+}
+
+.submit{
+	width: 120px;
+	height:30px;
+}
+
+#banner {
+	position: fixed;
+	height: 90px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-top: 5px solid #a1cb2f;
+	<--background-image: url("nov19.jpg");
+	background-image: url("nov18.jpg");
+	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	z-index: 999999;
+	padding: 10px;
+}
+
+#banner h1 {
+    line-height: 60px;
+}
+
+#last{
+	text-align: right;
+}
+
+#ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.li {
+    float: left;
+}
+
+hr{
+	height: 1px;
+	background-color: black;
+}
+
+.some:link, .some:visited{
+    display: block;
+    width: 220px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.w{
+	color: linen;
+}
+
+.some:hover, .some:active{
+    background-color: #7A991A;
+	color: brown;
+	<--background-color: darkgreen;
+}
+
+#nav{
+	margin-left: 90px;
+}
+
+#oo{
+	<--position: relative;
+	background-image: url("nov20.jpg");
+	padding: 50px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.clearboth {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+ 
+#nav {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12pt;
+}
+ 
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+#nav a:link,
+#nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+#nav a {
+    display: block;
+    padding: 6px 8px;
+}
+ 
+#nav li {
+    float: left;
+    background-color: #000000;
+    margin-right: 1px;
+    position: relative;
+}
+ 
+#nav li li{
+    width: 160px;
+    margin-top: 1px;
+}
+ 
+#nav li:hover {
+    background-color: #555555;
+}
+#nav li li:hover {
+    background-color: #757575;
+}  
+ 
+ 
+#nav ul ul  {
+    position: absolute;
+    visibility: hidden;
+}
+ 
+#nav ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    border: solid 1px transparent;
+}
+ 
+#nav li:hover > ul {
+    visibility: visible;
+}
+ 
+.right-arrow {
+    float: right;
+}

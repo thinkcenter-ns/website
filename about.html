@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="about.css">
+		<meta charset="utf-8">
+		<title>
+			About Me
+		</title>
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
+	</head>
+	
+	<body onload="startTime()">
+		<div id="banner">
+			<div class="w">
+				Welcome to Noveen's website:<br><br>
+				<div id="nav">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="hobbies.html">My Hobbies<span class="right-arrow">&#9658;</span></a>
+					<ul>
+						<li><a href="acheive.html">My Acheivements</a></li>            
+						<li><a href="aim.html">My Aim</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="feedback.html">Feedback Form</a></li>
+			</ul>
+			<br class="clearboth"/>
+		</div>
+			</div>
+		</div>
+		
+		<div id="oo">
+			<div>
+				<a href="feedback.html" id="feed">Feedback Form</a>
+				<div id="google">
+					<form name="cse" id="searchbox_demo" action="https://www.google.com/cse">
+						<input type="hidden" name="cref" value="" />
+						<input type="hidden" name="ie" value="utf-8" />
+						<input type="hidden" name="hl" value="" />
+						<input name="q" type="text" size="40" />
+						<input type="submit" name="sa" value="Google!" />
+					</form>
+					<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo"></script>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div id="current">
+				<p>You're currently at : <a href="home.html">Home</a>&nbsp;-->&nbsp;<a href="about.html">About Me</a></p>
+			</div>
+			<hr>
+			<table id="table">
+				<tr>
+					<td id="links">
+						<ul>
+							<li class="list"> 
+								<a href="main.html">Home</a>
+							</li>
+						
+							<li class="list"> 
+								<a href="hobbies.html">My Hobbies</a>
+								<ul>
+									<li>
+										<a href="acheive.html">My Acheivments</a>
+									</li>
+									<li>
+										<a href="aim.html">My Aim</a>
+									</li>
+								</ul>
+							</li>
+						
+							<li class="list"> 
+								<a href="about.html">About Me</a>
+							</li>
+						
+							<li class="list">
+								<a href="contact.html">Contact Us</a>
+							</li>
+						
+							<li class="list">
+								<a href="feedback.html">Feedback Form</a>
+							</li>
+						</ul>
+					</td>
+		
+					<td id="line">
+						<p id="p">
+							<img src="nov4.jpg.jpeg" alt="image" id="image">
+							My name is Noveen Sachdeva, and I'm currently pursuing my B.Tech in CSE from IIIT Hyderabad.<br>
+							I am 17 years old and am from Chandigarh. I did my secondary education from Delhi Public School, Chandigarh.<br>
+							My favourite type of food is North Indian and I also like Chinese food.<br>
+						
+							On the academic part, my 12th results are as follows:
+							<br><br>
+							<strong>CBSE Percentage</strong>: 95.4%
+							<br><br>
+							<strong>JEE Mains</strong>:
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Marks</strong>: 237
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>All India Rank</strong>: 2348
+							<br><br>
+							<strong>JEE Advanced</strong>:
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Marks</strong>: 242
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>All India Rank</strong>: 2311
+							<br><br>
+							<strong>BITSAT Marks</strong>: 351
+							<br><br>
+							My favorite actress is Katrina Kaif and my favourite actor is Hrihik Roshan.<br>
+							I have'nt accomplished much on the sports side except the fact that I have played districts level cricket in class 10th.<br>
+							I also like to play sports such as football, volleyball and squash.<br>
+							I love my college here @IIIT-H, and am totally saisfied with my college life.
+							I am studying top of the line courses like C-Programming, DLP, ITWS etc. in my first year of college itself.<br>
+							<br><br>
+							Thanks, for stopping by!
+							<br><br><br>
+							Love,
+							<br>
+							Noveen Sachdeva.
+						</p>
+					</td>
+		
+				</tr>
+			</table>
+			<hr>
+			<div>
+				<p class="col"><strong><em>Developed By:</em></strong></p>
+				<p>Noveen Sachdeva</p>
+				<p><u>Roll No</u> : 201502089</p>
+				<p>IIIT Hyderabad</p>
+			</div>
+			<div id="date">
+				<p class="col"><strong><em>The current time is:</em></strong></p>
+				<div id="txt"></div>
+			</div>
+			<p id="last">&copy;Noveen Sachdeva</p>
+		</div>
+	</body>
+</html>
